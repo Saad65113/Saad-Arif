@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FAFAFA;
+    --text-primary: #111111;
+    --accent: #2B4BFF;
+  }
+  
+  html.dark {
+    --bg-primary: #0A0A0A;
+    --text-primary: #EDEDED;
+    --accent: #2B4BFF;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.011em;
+  }
+}
+
+/* Custom cinematic utility styles */
+.cinematic-glow {
+  box-shadow: 0 0 50px -10px rgba(43, 75, 255, 0.25);
+}
+
+/* Hide scrollbar for clean horizontal scrolls if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
